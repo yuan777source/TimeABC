@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeABC - 简约计时器</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入苹果设计风格字体 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500&display=swap">
+</head>
+<body>
+    <div class="container">
+        <h1>TimeABC</h1>
+        
+        <!-- 计时器显示区域 -->
+        <div class="timer-display">
+            <span id="minutes">00</span>
+            <span class="colon">:</span>
+            <span id="seconds">00</span>
+            <span class="colon">:</span>
+            <span id="milliseconds">00</span>
+        </div>
+        
+        <!-- 控制按钮 -->
+        <div class="controls">
+            <button id="start-btn" class="btn">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                    <polygon points="4,2 4,14 14,8" fill="currentColor"/>
+                </svg>
+                <span>开始</span>
+            </button>
+            
+            <button id="pause-btn" class="btn" disabled>
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                    <rect x="3" y="2" width="4" height="12" fill="currentColor"/>
+                    <rect x="9" y="2" width="4" height="12" fill="currentColor"/>
+                </svg>
+                <span>暂停</span>
+            </button>
+            
+            <button id="reset-btn" class="btn" disabled>
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                    <path d="M8,2 A6,6 0 1,0 8,14 A6,6 0 1,0 8,2 Z M8,4 A4,4 0 1,1 8,12 A4,4 0 1,1 8,4 Z" fill="currentColor"/>
+                    <rect x="7" y="4" width="2" height="5" fill="currentColor"/>
+                    <rect x="7" y="9" width="5" height="2" fill="currentColor"/>
+                </svg>
+                <span>重置</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- 页脚 -->
+    <footer>
+        <p>简约设计 · 高效计时</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
